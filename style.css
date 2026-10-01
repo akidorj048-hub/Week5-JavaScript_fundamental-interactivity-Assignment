@@ -1,0 +1,199 @@
+```css
+/* ========================================
+   SpendWise - Budget Tracker Styles
+   ======================================== */
+
+/* CSS Variables */
+:root {
+    --brand: #2563eb;
+    --brand-dark: #1d4ed8;
+    --accent: #16a34a;
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted-text: #6b7280;
+    --border: #e5e7eb;
+    --danger: #dc2626;
+}
+
+
+/* ========================================
+   General Page Styling
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   Main Container
+   ======================================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+/* ========================================
+   Header
+   ======================================== */
+
+header {
+    background-color: var(--brand);
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+
+/* ========================================
+   Section Styling
+   ======================================== */
+
+section {
+    background-color: var(--surface);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+
+/* ========================================
+   Budget Summary Cards
+   ======================================== */
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    background-color: var(--background);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.card h3 {
+    color: var(--muted-text);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--brand);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   Expenses Table
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: var(--brand);
+    color: white;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--background);
+}
+
+tbody tr:hover {
+    background-color: #eef4ff;
+}
+
+
+/* ========================================
+   Information Section
+   ======================================== */
+
+.info-section p {
+    color: var(--muted-text);
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .summary-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+```

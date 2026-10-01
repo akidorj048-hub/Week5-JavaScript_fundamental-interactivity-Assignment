@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpendWise Budget Tracker</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>SpendWise</h1>
+            <p>Track your spending and manage your budget wisely.</p>
+        </header>
+
+        <!-- Budget Summary -->
+        <section class="budget-summary">
+
+            <h2>Budget Overview</h2>
+
+            <div class="summary-cards">
+
+                <div class="card">
+                    <h3>Monthly Budget</h3>
+                    <p id="budget">KSh 0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Expenses</h3>
+                    <p id="expenses">KSh 0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Remaining Balance</h3>
+                    <p id="balance">KSh 0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Expenses Section -->
+        <section class="expenses-section">
+
+            <h2>Your Expenses</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Groceries</td>
+                        <td>KSh 3,500</td>
+                        <td>Food</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transport</td>
+                        <td>KSh 1,500</td>
+                        <td>Transport</td>
+                    </tr>
+
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>KSh 1,000</td>
+                        <td>Entertainment</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Information Section -->
+        <section class="info-section">
+
+            <h2>How SpendWise Works</h2>
+
+            <p>
+                SpendWise allows you to enter your monthly budget.
+                JavaScript processes your budget and expense data,
+                calculates your total expenses, and determines your
+                remaining balance.
+            </p>
+
+            <p>
+                Open the browser console to view your budget summary
+                and calculation results.
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
